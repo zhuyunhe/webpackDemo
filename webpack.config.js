@@ -2,7 +2,7 @@ var webpack = require('webpack');
 
 module.exports = {
 	entry: {
-		index : './src/index',
+		index1 : './src/index',
 		index2: './src/index2'		
 	},
 	output: {
@@ -35,6 +35,6 @@ module.exports = {
 		]
 	},
 	plugins : [
-				new webpack.optimize.CommonsChunkPlugin('common.js')
+				new webpack.optimize.CommonsChunkPlugin('common.js'),
 	]
 };
