@@ -36,5 +36,8 @@ module.exports = {
 	},
 	plugins : [
 				new webpack.optimize.CommonsChunkPlugin('common.js'),
-	]
+	],
+	resolve : {
+		extensions : ['','.js','.jsx']
+	}
 };
